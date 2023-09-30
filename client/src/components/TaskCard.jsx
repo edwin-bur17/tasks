@@ -1,19 +1,20 @@
 import { useNavigate } from "react-router-dom"
 
-export function TaskCard({ task }) {
+const TaskCard = ({ task }) => {
     const navigate = useNavigate() // Navegacion
     return (
-        <div
-            style={{ background: "black" }}
+        <div    
             onClick={() => {
                 navigate(`/tasks/${task.id}`) // ruta concatenar el id de cada tarea
             }}
-            className="bg-zinc-800 p-3 hover:bg-zinc-700 hover:cursor-pointer"
+            className="bg-neutral-950 rounded-xl p-5 hover:bg-zinc-900 cursor-pointer"
+            
         >
             <h1 className="font-bold uppercase">{task.title}</h1>
             <p>{task.description}</p>
         </div>
     )
 }
+export default TaskCard
 
 

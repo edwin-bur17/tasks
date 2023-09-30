@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -133,4 +134,12 @@ CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
 
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+}
+
+# Customizar admin panel django con jazzmin
+JAZZMIN_SETTINGS = {
+    'site_title': 'Administración de tareas',
+    'site_header': 'Tareas',
+    'site_brand': 'Tareas',
+    'copyright': 'edwin',
 }

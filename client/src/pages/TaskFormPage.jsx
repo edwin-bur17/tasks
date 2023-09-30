@@ -56,7 +56,7 @@ const TaskFormPage = () => {
   return (
     <div className='max-w-xl mx-auto'>
 
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className='m-5'>
         <input
           type="text"
           className='bg-zinc-700 rounded-lg p-3 block w-full mb-3'
